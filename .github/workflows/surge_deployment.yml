@@ -20,22 +20,22 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Install NodeJS
       uses: actions/setup-node@v2-beta
       with:
-        node-version: 12
+        node-version: 13
     
-    - uses: borales/actions-yarn@v2.0.0
+    - uses: borales/actions-yarn@v3.0.0
       with:
-        cmd: install # will run `yarn install` command
+        cmd: install # will run `yarn install --ignore-engines` command
         
     - name: Build React App
-      run: yarn build
+      run: sudo yarn build
       
     - name: Install Surge
       run: npm install --global surge
 
     - name: Deploy to Surge
-      run: surge ./build project003-adil.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build taimur_react_base_app.surge.sh --token ${{secrets.SURGE_TOKEN}}
