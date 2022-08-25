@@ -10,7 +10,7 @@ function Hi() {
 }*/
 
 ReactDOM.render(<div>Hello World! updated</div>, 
-document.querySelector('#root'));
+document.getElementById('root'));
 
 /*
 const root = ReactDOM.createRoot(document.getElementById('root'));
