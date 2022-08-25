@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/*
 function Hi() {
   return <div>Hello World! updated</div>;
-}
+}*/
 
-ReactDOM.render(<Hi/>, document.querySelector('#root'));
+ReactDOM.render(<div>Hello World! updated</div>, 
+document.querySelector('#root'));
 
 /*
 const root = ReactDOM.createRoot(document.getElementById('root'));
