@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import { useState } from 'react';
+import './Room.css'
 
 
 
@@ -18,7 +19,7 @@ function Room() {
     }
 
   
-  return <div>This room is {isLit ? "Lighhtened" : "dark"} <br/>age is {age}
+  return <div className={"room "+(isLit ? "lit" : "dark")}> <br/>age is {age}
   <br/>
   <br/>
  
