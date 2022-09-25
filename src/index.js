@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 ReactDOM.render(
-  <div>Hello world from taimur shah 
+  <div>Hello world from index.js 
     <div><App name="my app tag" age="30" /></div>
     <div><Hello /></div>
   </div>,
