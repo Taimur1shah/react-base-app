@@ -8,7 +8,7 @@ import ValueContext from './ValueContext';
 
   function App(props){
     let[number,setNumber] = useState(45)  
-  let value = 81;
+    let value = useState(81);
   
   return (
   <ValueContext.Provider value = {value}>
@@ -16,6 +16,7 @@ import ValueContext from './ValueContext';
     <div>Hello World from App.Js Hi from App.js Parent component: {props.name} and age {props.age}
         <div><Parent num={number}></Parent></div>
     <button onClick={()=>{setNumber(++number)}}>Update Number</button>
+
     </div>
   </ValueContext.Provider>
   );
